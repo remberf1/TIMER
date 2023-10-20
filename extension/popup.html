@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            width: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Custom Timer</h1>
+
+    <label for="customMessage">Custom Message:</label>
+    <input type="text" id="customMessage"><br><br>
+
+    <label for="timerInput">Timer Duration (e.g., 10s, 5m, 2h):</label>
+    <input type="text" id="timerInput"><br><br>
+
+    <button id="startTimer">Start Timer</button>
+    <button id="stopTimer">Stop Timer</button>
+    <button id="resetTimer">Reset</button>
+
+    <p id="remainingTime">Remaining Time: </p>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
